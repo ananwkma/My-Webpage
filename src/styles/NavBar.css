@@ -1,0 +1,47 @@
+.container {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: center;
+}
+
+.navLeft {
+	padding: 20px 0px 10px 0px;
+	cursor: pointer;
+}
+
+.navRight {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+
+.navItem {
+	padding: 20px 0px 10px 0px;
+	cursor: pointer;
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+	.container {
+		padding: 2%;
+		height: 80px;
+		display: flex;
+		flex-direction: row;
+	}
+	.navLeft {
+		width: 50vw;
+		padding-left: 20px;
+		text-align: left;
+	}
+	.navRight {
+		width: 50vw;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.navItem {
+		margin-left: 70px;
+	}
+
+}
