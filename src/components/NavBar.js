@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+import { goToAnchor } from 'react-scrollable-anchor'
 
 class NavBar extends Component {
 
   scroll = (e) => {
     window.scrollTo(0, 0);
+  }
+
+  handleClick = (e) => {
+    e.preventDefault();
+    let path = e.target.id;
+    goToAnchor(path);
   }
 
   render() {
@@ -13,11 +20,14 @@ class NavBar extends Component {
         <div className="navLeft"> 
           <h2 onClick={this.scroll}>Anan</h2>
         </div>
+
         <div className="navRight"> 
-          <h2 className="navItem" onClick={this.scroll}>About</h2>
-          <h2 className="navItem" onClick={this.scroll}>Projects</h2>
-          <h2 className="navItem" onClick={this.scroll}>Contact</h2>
+          <h2 className="navItem" onClick={this.handleClick} id="HOME">Home</h2>
+          <h2 className="navItem" onClick={this.handleClick} id="ABOUT">About</h2>
+          <h2 className="navItem" onClick={this.handleClick} id="PROJECTS">Projects</h2>
+          <h2 className="navItem" onClick={this.handleClick} id="CONTACT">Contact</h2>
         </div>
+
       </div>
     );
   }
