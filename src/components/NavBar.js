@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+import '../styles/NavBar.scss';
 import { goToAnchor } from 'react-scrollable-anchor'
 
 class NavBar extends Component {
@@ -22,9 +22,9 @@ class NavBar extends Component {
         </div>
 
         <div className="navRight"> 
-          <h2 className="navItem" onClick={this.handleClick} id="HOME">Home</h2>
           <h2 className="navItem" onClick={this.handleClick} id="ABOUT">About</h2>
           <h2 className="navItem" onClick={this.handleClick} id="PROJECTS">Projects</h2>
+          <h2 className="navItem" onClick={this.handleClick} id="RANKINGS">Rankings</h2>
           <h2 className="navItem" onClick={this.handleClick} id="CONTACT">Contact</h2>
         </div>
 

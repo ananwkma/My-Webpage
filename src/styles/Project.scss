@@ -1,0 +1,13 @@
+@import './shared.scss';
+
+.ProjectContainer {
+	height: 250px;
+	width: 250px;
+	background-color: #EEEEEE;
+	text-align: center;
+	margin: 25px 25px 25px 25px;
+}
+
+@media (min-width: $mobile-size) and (orientation:landscape) {
+
+}

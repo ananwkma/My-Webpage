@@ -1,0 +1,27 @@
+@import './shared.scss';
+
+.row {
+	background-color: #000000;
+	height: 100vh;
+	color: white;
+	width: 100%;
+}
+
+.col {
+	background-color: #000000;
+	height: 18%;
+	color: white;
+	width: 100%;
+}
+
+.contentContainer {
+	margin-top: $navbar-height;
+}
+
+.scrollElement {
+	// height: 700px;
+}
+
+.ScrollSection > h1 {
+	text-align: center;
+}

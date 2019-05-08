@@ -1,0 +1,10 @@
+.ProjectsContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.RowContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}

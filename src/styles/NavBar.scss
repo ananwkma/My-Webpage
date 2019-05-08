@@ -1,3 +1,5 @@
+@import './shared.scss';
+
 .container {
 	width: 100vw;
 	display: flex;
@@ -5,28 +7,29 @@
 	background-color: #FFFFFF;
 	color: #000000;
 	text-align: center;
+	position: fixed;
+	top: 0;
 }
 
 .navLeft {
-	padding: 20px 0px 10px 0px;
 	cursor: pointer;
+	font-size: 15px;
 }
 
 .navRight {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 10px;
+	margin-right: 60px;
+	font-size: 15px;
 }
 
 .navItem {
-	padding: 20px 0px 10px 0px;
 	cursor: pointer;
 }
 
-@media (min-width: 600px) and (orientation:landscape) {
+@media (min-width: $mobile-size) and (orientation:landscape) {
 	.container {
-		padding: 2%;
-		height: 80px;
+		height: $navbar-height;
 		display: flex;
 		flex-direction: row;
 	}
