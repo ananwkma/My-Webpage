@@ -7,16 +7,22 @@
 	background-color: #FFFFFF;
 	color: #000000;
 	text-align: center;
-	position: fixed;
 	top: 0;
+  	z-index: 1;
 }
 
 .navLeft {
+	width: 100vw;
 	cursor: pointer;
 	font-size: 15px;
 }
 
+.navLeft:hover {
+	color: $text-hover;
+}
+
 .navRight {
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	margin-right: 60px;
@@ -27,11 +33,16 @@
 	cursor: pointer;
 }
 
+.navItem:hover {
+	color: $text-hover;
+}
+
 @media (min-width: $mobile-size) and (orientation:landscape) {
 	.container {
 		height: $navbar-height;
 		display: flex;
 		flex-direction: row;
+		position: fixed;
 	}
 	.navLeft {
 		width: 50vw;

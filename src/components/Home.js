@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import About from './About';
-import Contact from './Contact';
+import Links from './Links';
 import Rankings from './Rankings';
 import '../styles/Home.scss';
 
@@ -37,11 +37,12 @@ class Home extends Component {
           <ScrollableAnchor id={'PROJECTS'}>
             <div className="ScrollSection">
               <h1> PROJECTS </h1>
-              <Projects />
             </div>
           </ScrollableAnchor>
+          <Projects />
         </div>
 
+{ /*
         <div key={'RANKINGS'} className="scrollElement">
           <ScrollableAnchor id={'RANKINGS'}>
             <div className="ScrollSection">
@@ -50,14 +51,16 @@ class Home extends Component {
           </ScrollableAnchor>
           <Rankings/>
         </div>
+*/ }
 
-        <div key={'CONTACT'} className="scrollElement">
-          <ScrollableAnchor id={'CONTACT'}>
+
+        <div key={'LINKS'} className="scrollElement">
+          <ScrollableAnchor id={'LINKS'}>
             <div className="ScrollSection">
-              <h1> CONTACT </h1>
+              <h1> LINKS </h1>
             </div>
           </ScrollableAnchor>
-          <Contact />
+          <Links />
         </div>
 
       </div>

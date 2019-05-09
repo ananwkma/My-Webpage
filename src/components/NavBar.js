@@ -24,8 +24,10 @@ class NavBar extends Component {
         <div className="navRight"> 
           <h2 className="navItem" onClick={this.handleClick} id="ABOUT">About</h2>
           <h2 className="navItem" onClick={this.handleClick} id="PROJECTS">Projects</h2>
+        {/*
           <h2 className="navItem" onClick={this.handleClick} id="RANKINGS">Rankings</h2>
-          <h2 className="navItem" onClick={this.handleClick} id="CONTACT">Contact</h2>
+        */}
+          <h2 className="navItem" onClick={this.handleClick} id="LINKS">Links</h2>
         </div>
 
       </div>

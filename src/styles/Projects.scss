@@ -1,10 +1,26 @@
+@import './shared.scss';
+
 .ProjectsContainer {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .RowContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+
+}
+
+@media (min-width: $mobile-size) and (orientation:landscape) {
+	.ProjectsContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.RowContainer {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
 }

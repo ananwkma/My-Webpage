@@ -6,13 +6,10 @@ class About extends Component {
     return (
       <div className="AboutContainer">
         <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum. 
+          I am a full-stack developer looking for opportunities. 
+          I most recently worked in QA at Apple, fixing and reporting graphical errors. 
+          Now I am using both my visual and technical ability to create beautiful responsive 
+          web apps with React. On my free time I enjoy illustrating and playing video games.
         </h2>
       </div>
     );
