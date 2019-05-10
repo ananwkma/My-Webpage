@@ -8,6 +8,7 @@ import '../styles/Home.scss';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
  
+// configureAnchors({offset: -150, scrollDuration: 200})
 configureAnchors({offset: -80, scrollDuration: 200})
 
 class Home extends Component {
@@ -15,20 +16,14 @@ class Home extends Component {
     return (
       <div className="contentContainer">
         <div className="row">
-          
-          <div className="col" align="center"></div>
           <div className="col" align="center">
-          TEST
-            {//<img src="circlelinkedincropbnw.png" alt="profilepic"/>
-          }
+            <h1> LORUM IPSUM </h1>
           </div>
         </div>
 
         <div key={'ABOUT'} className="scrollElement">
           <ScrollableAnchor id={'ABOUT'}>
-            <div className="ScrollSection">
-              <h1> ABOUT </h1>
-            </div>
+            <div className="ScrollSection"/>
           </ScrollableAnchor>
           <About /> 
         </div>
@@ -42,23 +37,9 @@ class Home extends Component {
           <Projects />
         </div>
 
-{ /*
-        <div key={'RANKINGS'} className="scrollElement">
-          <ScrollableAnchor id={'RANKINGS'}>
-            <div className="ScrollSection">
-              <h1> RANKINGS </h1>
-            </div>
-          </ScrollableAnchor>
-          <Rankings/>
-        </div>
-*/ }
-
-
-        <div key={'LINKS'} className="scrollElement">
+        <div key={'LINKS'} className="Footer">
           <ScrollableAnchor id={'LINKS'}>
-            <div className="ScrollSection">
-              <h1> LINKS </h1>
-            </div>
+            <div className="ScrollSection"/>
           </ScrollableAnchor>
           <Links />
         </div>

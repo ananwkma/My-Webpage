@@ -9,28 +9,38 @@
 	text-align: center;
 	top: 0;
   	z-index: 1;
+  	border-width: 0px 0px 1px 0px;
+  	border-style: solid;
+  	border-color: #DDDDDD;
 }
 
 .navLeft {
 	width: 100vw;
 	cursor: pointer;
-	font-size: 15px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
 }
 
-.navLeft:hover {
-	color: $text-hover;
+.HomeButton {
+	font-weight: 400;
+	font-size: 18px;
 }
 
 .navRight {
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
-	margin-right: 60px;
-	font-size: 15px;
+	margin-right: 10px;
+	align-items: center;
 }
 
 .navItem {
 	cursor: pointer;
+	font-weight: 300;
+	font-size: 17px;
+	display: flex;
 }
 
 .navItem:hover {
@@ -47,7 +57,7 @@
 	.navLeft {
 		width: 50vw;
 		padding-left: 20px;
-		text-align: left;
+		justify-content: left;
 	}
 	.navRight {
 		width: 50vw;
@@ -57,5 +67,8 @@
 	.navItem {
 		margin-left: 70px;
 	}
-
+	.HomeButton {
+		font-weight: 400;
+		font-size: 25px;
+	}
 }

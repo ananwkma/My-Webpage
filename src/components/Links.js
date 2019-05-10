@@ -16,7 +16,7 @@ class Links extends Component {
         <a href="https://www.linkedin.com/in/ananwma/"> 
           <LogoLinkedin className="FooterLink" fontSize="60px"/> 
         </a>
-        <a href="http://www.google.com"> 
+        <a href="mailto:ananwma@gmail.com"> 
           <IosMail className="FooterLink" fontSize="60px"/> 
         </a>
         <a href="http://www.google.com"> 

@@ -4,24 +4,53 @@
 	background-color: #000000;
 	height: 100vh;
 	color: white;
-	width: 100%;
+	width: 100vw;
 }
 
 .col {
 	background-color: #000000;
 	height: 18%;
 	color: white;
-	width: 100%;
+	width: 100vw;
+
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .contentContainer {
-	margin-top: $navbar-height;
+	margin-top: 0px;
 }
 
 .scrollElement {
 	margin: 150px 0px 150px 0px;
 }
 
+.ScrollSection {
+	margin-bottom: 50px;
+}
+
 .ScrollSection > h1 {
 	text-align: center;
+}
+
+.Footer {
+	margin: 150px 0px 50px 0px;
+}
+
+
+@media (min-width: $mobile-size) and (orientation:landscape) {
+	.contentContainer {
+		margin-top: $navbar-height;
+	}
+	.col {
+		background-color: #000000;
+		height: 18%;
+		color: white;
+		width: 100vw;
+
+	  position: absolute;
+	  top: 50%; left: 50%;
+	  transform: translate(-50%,-20%);
+	}
 }

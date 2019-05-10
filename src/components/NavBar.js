@@ -18,7 +18,7 @@ class NavBar extends Component {
     return (
       <div className="container">
         <div className="navLeft"> 
-          <h2 onClick={this.scroll}>Anan</h2>
+          <h2 className="HomeButton" onClick={this.scroll}>Anan Ma</h2>
         </div>
 
         <div className="navRight"> 

@@ -5,6 +5,9 @@ class About extends Component {
   render() {
     return (
       <div className="AboutContainer">
+        <div className="ProfilePicContainer">
+          <img className="ProfilePic" src="circlelinkedincropbnw.png" alt="profilepic"/>
+        </div>
         <h2>
           I am a full-stack developer looking for opportunities. 
           I most recently worked in QA at Apple, fixing and reporting graphical errors. 
