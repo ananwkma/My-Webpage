@@ -8,8 +8,8 @@ import '../styles/Home.scss';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
  
-// configureAnchors({offset: -150, scrollDuration: 200})
-configureAnchors({offset: -80, scrollDuration: 200})
+configureAnchors({offset: -150, scrollDuration: 200})
+// configureAnchors({offset: -80, scrollDuration: 200})
 
 class Home extends Component {
   render() {
