@@ -8,12 +8,17 @@ class About extends Component {
         <div className="ProfilePicContainer">
           <img className="ProfilePic" src="circlelinkedincropbnw.png" alt="profilepic"/>
         </div>
-        <h2>
+        
+        <hr/>
+
+        <h2 className="Blurb">
           I am a full-stack developer looking for opportunities. 
           I most recently worked in QA at Apple, fixing and reporting graphical errors. 
           Now I am using both my visual and technical ability to create beautiful responsive 
           web apps with React. On my free time I enjoy illustrating and playing video games.
         </h2>
+
+        <hr/>
       </div>
     );
   }

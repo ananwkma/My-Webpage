@@ -7,14 +7,6 @@ class Project extends Component {
 		detailsShow: false,
 	}
 
-	renderDetails = () => {
-		return (
-			<div className="ProjectDetails">
-				<h1> XDDDDD </h1>
-			</div>
-		)
-	}
-
 	showDetails = (bool) => {
 		this.setState({ detailsShow: bool })
 	}
@@ -28,10 +20,13 @@ class Project extends Component {
       			onMouseOver={() => this.showDetails(true)} 
       			onMouseOut={() => this.showDetails(false)}
       		>
-		      	<div className="ProjectDetails">
-			      	{ detailsShow ? details : title }
-		      	</div>
-     		 	</a>
+      			<img className="ProjectPic" src={this.props.picture} alt="projectpic"/>
+		      	{<div className="ProjectDetails">
+		      		<div className="Title"> { detailsShow ? title : null } </div>
+		      		{ detailsShow ? <hr/> : null }
+			      	<div className="Details"> { detailsShow ? details : null } </div>
+		      	</div> }
+     		 </a>
 	      </div>
     );
   }

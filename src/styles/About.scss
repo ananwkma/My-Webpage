@@ -1,6 +1,8 @@
+@import './shared.scss';
+
 .AboutContainer {
-	padding: 0px 150px 0px 150px;
-	text-align: justify;
+	padding: 0px 5vw 0px 5vw;
+	text-align: left;
 	margin-top: 100px;
 }
 
@@ -15,4 +17,16 @@
 	border-style: solid;
 	border-radius: 500px;
 	border-color: #AAAAAA;
+}
+
+.Blurb {
+	font-style: italic;
+}
+
+@media (min-width: $mobile-size) and (orientation:landscape) {
+	.AboutContainer {
+		padding: 0px 150px 0px 150px;
+		text-align: justify;
+		margin-top: 100px;
+	}
 }

@@ -15,9 +15,12 @@ class Home extends Component {
   render() {
     return (
       <div className="contentContainer">
-        <div className="row">
-          <div className="col" align="center">
-            <h1> LORUM IPSUM </h1>
+        <div className="Banner">
+          <div className="BannerTextContainer">
+            <h1 className="BannerText"> Web Developer </h1>
+          </div>
+          <div className="ImageContainer" align="center">
+            {<img src="coding.jpg" className="BannerImage"/>}
           </div>
         </div>
 
